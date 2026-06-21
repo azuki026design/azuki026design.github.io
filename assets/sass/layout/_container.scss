@@ -1,0 +1,41 @@
+@use '../foundation/variables'as v;
+
+.l-container {
+  margin-inline: auto;
+  width: 89.74vw;
+  max-width: 100%;
+
+  @include v.mq(tablet) {
+    width: 70vw;
+  }
+
+  @include v.mq(pc) {
+    width: 77.14vw;
+    max-width: 67.5rem;
+  }
+}
+
+.l-container-narrow {
+  margin-inline: auto;
+  width: 89.74vw;
+  max-width: 100%;
+
+  @include v.mq(sp-lg) {
+    width: 27.5rem;
+  }
+
+  @include v.mq(tab-sm) {
+    width: 70vw;
+    max-width: 30rem;
+  }
+
+  @include v.mq(tab-lg) {
+    width: 70vw;
+    max-width: 40rem;
+  }
+
+  @include v.mq(pc) {
+    width: 70vw;
+    max-width: 52.5rem;
+  }
+}

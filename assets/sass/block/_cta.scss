@@ -1,0 +1,38 @@
+@use '../foundation/variables'as v;
+
+.cta {
+  background-color: v.$c-light-yellow;
+  padding: 36px 0;
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta__text {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.8;
+  margin: 0 0 36px;
+  letter-spacing: 0.02em;
+}
+
+.cta__button {
+  display: flex;
+  width: 240px;
+  align-items: center;
+  justify-content: center;
+  border: solid v.$c-text 1px;
+  background-color: v.$c-orange;
+  color: v.$c-white;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.cta__button:hover {
+  opacity: 0.8;
+}

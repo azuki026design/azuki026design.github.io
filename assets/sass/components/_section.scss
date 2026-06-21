@@ -1,0 +1,42 @@
+@use '../foundation/variables'as v;
+
+.c-section-title {
+  position: relative;
+  font-size: 32px;
+  text-align: center;
+  margin: 0 0 32px;
+  font-family: v.$f-en-sub;
+  line-height: 1.0;
+
+  @include v.mq(no-sp) {
+    font-size: 48px;
+    margin: 0 0 48px;
+  }
+}
+
+.c-section-title::after {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  background-color: v.$c-text;
+  width: 48px;
+  height: 1px;
+
+  @include v.mq(no-sp) {
+    top: 64px;
+    width: 64px;
+  }
+}
+
+.c-section-sub-title {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 16px;
+
+  @include v.mq(no-sp) {
+    font-size: 24px;
+    margin: 0 0 24px;
+  }
+}

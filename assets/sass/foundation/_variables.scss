@@ -1,0 +1,58 @@
+@use 'sass:map';
+
+//-----------------------------------
+// フォントファミリー
+//------------------------------------
+$f-main: 'Noto Sans JP',
+'Hiragino Sans',
+'Meiryo',
+sans-serif;
+$f-sub: 'Noto Serif JP',
+'Hiragino Sans',
+'Meiryo',
+sans-serif;
+$f-en: 'Outfit',
+sans-serif;
+$f-en-sub: 'Poppins',
+sans-serif;
+$f-icon: 'bootstrap-icons';
+
+//-----------------------------------
+// パス指定
+//-----------------------------------
+$image-path: '../images/';
+
+//-----------------------------------
+// ブレイクポイント
+//-----------------------------------
+
+$breakpoints: (sp-lg : 'screen and (min-width: 480px) and (max-width: 767.99px)',
+  tablet : 'screen and (min-width: 768px) and (max-width: 1399.99px)',
+  tab-sm : 'screen and (min-width: 768px) and (max-width: 1079.99px)',
+  tab-lg : 'screen and (min-width: 1080px) and (max-width: 1399.99px)',
+  pc : 'screen and (min-width: 1400px)',
+  wide : 'screen and (min-width: 1401px)',
+  no-sp : 'screen and (min-width: 768px)'
+);
+
+//-----------------------------------
+// Color
+//-----------------------------------
+
+$c-text: #333;
+$c-white: #FFF;
+$c-orange: #FFA76C;
+$c-yellow: #FFFF00;
+$c-light-yellow: #fff8cf;
+$c-red: #EB4E45;
+$c-gray: #888;
+$c-light-gray: #F5F5F5;
+
+// -----------------------------------
+// メディアクエリ
+// -----------------------------------
+@mixin mq($bp) {
+  @media #{map.get($breakpoints, $bp)} {
+    @content;
+  }
+}

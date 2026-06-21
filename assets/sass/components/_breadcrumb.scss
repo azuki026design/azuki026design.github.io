@@ -1,0 +1,14 @@
+@use '../foundation/variables'as v;
+
+.c-breadcrumb {
+  display: flex;
+}
+
+.c-breadcrumb-link {
+  color: v.$c-gray;
+  font-size: 12px;
+
+  @include v.mq(no-sp) {
+    font-size: 14px;
+  }
+}

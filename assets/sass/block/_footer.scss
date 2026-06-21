@@ -1,0 +1,22 @@
+@use '../foundation/variables'as v;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0px;
+
+  @include v.mq(no-sp) {
+    padding: 32px 0px;
+  }
+}
+
+.footer__copy {
+  text-align: center;
+  font-family: v.$f-en-sub;
+  font-size: 10px;
+  color: v.$c-gray;
+
+  @include v.mq(no-sp) {
+    font-size: 12px;
+  }
+}

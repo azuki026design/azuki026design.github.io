@@ -1,0 +1,29 @@
+@use '../foundation/variables'as v;
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.header__logo {
+  display: inline-block;
+  font-family: v.$f-en;
+  font-size: 32px;
+  color: v.$c-white;
+  background: linear-gradient(0deg, #FF9F6B 0%, #FF6B3D 100%);
+  padding: 16px 4px;
+
+  @include v.mq(no-sp) {
+    font-size: 64px;
+    padding: 32px 8px;
+  }
+}
+
+.header__detail {
+  padding: 8px 0;
+
+  @include v.mq(no-sp) {
+    padding: 16px 0;
+  }
+}
