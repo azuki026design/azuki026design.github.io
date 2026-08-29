@@ -68,7 +68,7 @@
 
 .work__list-caption {
   font-size: 14px;
-  margin: 0 40px;
+  margin: 0 40px 20px;
 }
 
 .work__detail {
@@ -183,4 +183,10 @@
   width: 100%;
   max-width: 67.5rem;
   margin: 0 auto 32px;
+}
+
+.work__lp-link {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration-line: underline;
 }
