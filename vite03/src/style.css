@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* 必要ならカスタムテーマ */
+@theme {
+  --font-sans: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  --color-brand: #45ccc4;
+  --color-accent: #eb4e45;
+  --text-xs--line-height: 1.8;
+  --text-sm--line-height: 1.8;
+  --text-base--line-height: 1.8;
+  --text-lg--line-height: 1.8;
+}
+
+@layer base {
+  body {
+    line-height: 1.8;
+  }
+}
