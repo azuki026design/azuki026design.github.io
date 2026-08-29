@@ -598,6 +598,11 @@ progress {
   text-decoration-line: underline;
 }
 
+.work__lp-bg {
+  padding: 8px;
+  background-color: #FFF;
+}
+
 .cta {
   background-color: #fff8cf;
   padding: 36px 0;
