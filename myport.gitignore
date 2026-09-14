@@ -20,7 +20,7 @@ ehthumbs.db
 *.log
 *.map
 assets/css/style.css.map
-dist/
+
 build/
 .cache/
 
