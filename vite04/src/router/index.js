@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CompanyView from '../views/CompanyView.vue'
 import WorkView from '../views/WorkView.vue'
@@ -46,7 +46,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory('/vite04/dist/'),
+    history: createWebHashHistory(import.meta.env.BASE_URL),
     routes,
     scrollBehavior() {
         return { top: 0 }
