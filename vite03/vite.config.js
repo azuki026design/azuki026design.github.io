@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
-  base: '/vite03/dist/',
+  base: process.env.NODE_ENV === 'production' ? '/vite03/dist/' : '/',
 })

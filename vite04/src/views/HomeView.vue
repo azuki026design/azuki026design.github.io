@@ -4,8 +4,8 @@
         <div
             class="mx-auto mt-[5rem] w-full aspect-[375/450] md:aspect-[1400/600] md:max-h-[37.5rem] md:overflow-hidden md:object-cover">
             <picture>
-                <source srcset="/images/mainvisual-sp.jpg" media="(max-width: 767.99px)" />
-                <img src="/images/mainvisual-pc.jpg" alt="" class="object-cover w-full h-full" loading="lazy"
+                <source :srcset="`${base}images/mainvisual-sp.jpg`" media="(max-width: 767.99px)" />
+                <img :src="`${base}images/mainvisual-pc.jpg`" alt="" class="object-cover w-full h-full" loading="lazy"
                     decoding="async" />
             </picture>
         </div>
@@ -30,13 +30,13 @@
             <!-- COMPANY / WORK -->
             <ul class="flex flex-col md:flex-row">
                 <li class="flex aspect-[700/360] w-full items-center justify-center bg-cover bg-center md:w-1/2"
-                    style="background-image: url('/images/top-company.jpg')">
+                    :style="{ backgroundImage: `url(${base}images/top-company.jpg)` }">
                     <router-link to="/company" class="flex items-center justify-center w-full h-full">
                         <h2 class="text-[1.375rem] text-white md:text-[2rem]">COMPANY</h2>
                     </router-link>
                 </li>
                 <li class="flex aspect-[700/360] w-full items-center justify-center bg-cover bg-center md:w-1/2"
-                    style="background-image: url('/images/top-work.jpg')">
+                    :style="{ backgroundImage: `url(${base}images/top-work.jpg)` }">
                     <router-link to="/work" class="flex items-center justify-center w-full h-full">
                         <h2 class="text-[1.375rem] text-white md:text-[2rem]">WORK</h2>
                     </router-link>
@@ -47,6 +47,8 @@
 </template>
 
 <script setup>
+const base = import.meta.env.BASE_URL
+
 const news = [
     { date: '20XX年3月1日', topic: '弊社WEBサイトをリニューアルしました。' },
     { date: '20XX年1月4日', topic: '新年のご挨拶' },

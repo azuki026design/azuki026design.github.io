@@ -20,7 +20,7 @@
                     :pagination="{ clickable: true, dynamicBullets: true, dynamicMainBullets: 5 }" class="mb-[3.5rem]">
                     <swiper-slide v-for="(item, i) in publicWorks" :key="i" class="!w-[80%] md:!w-[58%]">
                         <div class="relative">
-                            <img :src="`/images/${item.img}`" alt="" class="aspect-[580/380] w-full object-cover"
+                            <img :src="`${base}images/${item.img}`" alt="" class="aspect-[580/380] w-full object-cover"
                                 loading="lazy" decoding="async" />
                             <div
                                 class="absolute bottom-0 flex w-[calc(100%-1.25rem)] items-center bg-[#070707] p-[0.625rem] opacity-70 md:w-[calc(100%-1.875rem)] md:p-[0.9375rem]">
@@ -46,7 +46,7 @@
                     :pagination="{ clickable: true, dynamicBullets: true, dynamicMainBullets: 5 }" class="mb-[3.5rem]">
                     <swiper-slide v-for="(item, i) in apartments" :key="i" class="!w-[80%] md:!w-[58%]">
                         <div class="relative">
-                            <img :src="`/images/${item.img}`" alt="" class="aspect-[580/380] w-full object-cover"
+                            <img :src="`${base}images/${item.img}`" alt="" class="aspect-[580/380] w-full object-cover"
                                 loading="lazy" decoding="async" />
                             <div
                                 class="absolute bottom-0 flex w-[calc(100%-1.25rem)] items-center bg-[#070707] p-[0.625rem] opacity-70 md:w-[calc(100%-1.875rem)] md:p-[0.9375rem]">
@@ -101,6 +101,7 @@ import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
+const base = import.meta.env.BASE_URL
 const modules = [Pagination]
 
 const publicWorks = [
