@@ -1,0 +1,128 @@
+@use '../foundation/variables'as v;
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: v.$c-white;
+  z-index: 800;
+  border-bottom: solid 1px v.$c-red;
+}
+
+.header__container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 12.53vw;
+  width: 100%;
+  padding: 1.6875rem 5.33vw;
+
+  @include v.mq(no-sp) {
+    max-width: 62.5rem;
+    width: 71.43vw;
+    justify-content: space-between;
+    gap: 0;
+    padding: 1.5625rem 0;
+    margin-inline: auto;
+    z-index: 900;
+  }
+}
+
+.header__hamburger-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 999;
+  width: 2rem;
+
+  @include v.mq(no-sp) {
+    display: none;
+  }
+}
+
+.header__hamburger-button-bar {
+  width: 100%;
+  height: 0.125rem;
+  background-color: v.$c-red;
+}
+
+.header__hamburger-button-bar--top.is-open {
+  position: relative;
+  transform: translateY(0.6875rem) rotate(45deg);
+  transition: all .5s ease-in-out;
+  background-color: v.$c-white;
+}
+
+.header__hamburger-button-bar--center.is-open {
+  display: none;
+  transition: all .5s ease-in-out;
+}
+
+.header__hamburger-button-bar--bottom.is-open {
+  position: relative;
+  transform: translateY(0) rotate(135deg);
+  transition: all .5s ease-in-out;
+  background-color: v.$c-white;
+}
+
+.header__logo-box {
+  font-size: 0;
+  line-height: 0;
+}
+
+.header__logo {
+  width: 11.25rem;
+  height: 1.45625rem;
+
+  @include v.mq(no-sp) {
+    width: 14.775rem;
+    height: 1.9125rem;
+  }
+}
+
+.header__menu {
+  display: none;
+
+  @include v.mq(no-sp) {
+    display: flex;
+  }
+}
+
+.header__menu-list {
+  display: flex;
+  gap: clamp(0.625rem, 2vw, 2.5rem);
+
+  @include v.mq(pc) {
+    gap: clamp(0.625rem, 2.86vw, 2.5rem);
+  }
+}
+
+.header__menu-link {
+  font-size: 0.875rem;
+}
+
+.header__hamburger-menu {
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: all 0.5s;
+}
+
+.header__hamburger-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 0 1rem;
+  background-color: v.$c-black;
+}
+
+.header__hamburger-link {
+  font-size: 0.875rem;
+  color: v.$c-white;
+}

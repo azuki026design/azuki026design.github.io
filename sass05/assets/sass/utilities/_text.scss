@@ -1,0 +1,31 @@
+@use '../foundation/variables'as v;
+
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+.u-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+
+  @include v.mq(no-sp) {
+    font-size: 1.5rem;
+  }
+}
+
+.u-eng {
+  display: block;
+  margin: 0 auto 2.5rem;
+  font-size: 0.6875rem;
+  text-align: center;
+
+  @include v.mq(no-sp) {
+    font-size: 0.6875rem;
+  }
+}

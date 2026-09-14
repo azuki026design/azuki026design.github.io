@@ -1,0 +1,48 @@
+@use 'sass:map';
+
+//-----------------------------------
+// フォントファミリー
+//------------------------------------
+$f-main: 'Yu Gothic',
+'YuGothic',
+'Hiragino Sans',
+'Meiryo',
+sans-serif;
+$f-icon: 'bootstrap-icons';
+
+//-----------------------------------
+// パス指定
+//-----------------------------------
+$image-path: '../images/';
+
+//-----------------------------------
+// ブレイクポイント
+//-----------------------------------
+
+$breakpoints: (sp-lg : 'screen and (min-width: 390px) and (max-width: 767.99px)',
+  tablet : 'screen and (min-width: 768px) and (max-width: 1365.99px)',
+  tab-sm : 'screen and (min-width: 768px) and (max-width: 1079.99px)',
+  tab-lg : 'screen and (min-width: 1080px) and (max-width: 1365.99px)',
+  pc : 'screen and (min-width: 1366px)',
+  wide : 'screen and (min-width: 1920.01px)',
+  no-sp : 'screen and (min-width: 768px)'
+);
+
+//-----------------------------------
+// Color
+//-----------------------------------
+
+$c-text: #333;
+$c-black: #000;
+$c-white: #FFF;
+$c-blue: #F1FBFF;
+$c-gray: #B5BCBF;
+
+// -----------------------------------
+// メディアクエリ
+// -----------------------------------
+@mixin mq($bp) {
+  @media #{map.get($breakpoints, $bp)} {
+    @content;
+  }
+}

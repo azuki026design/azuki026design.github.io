@@ -1,0 +1,43 @@
+@use '../foundation/variables'as v;
+
+.footer {
+  padding: 3.75rem 0 1rem;
+  background-color: v.$c-bg-footer;
+
+  @include v.mq(no-sp) {
+    padding: 5.625rem 0 1.25rem;
+  }
+}
+
+.footer__list {
+  display: flex;
+  width: 17.8125rem;
+  margin: 0 auto 2.5rem;
+}
+
+.footer__item {
+  position: relative;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  color: v.$c-light-text;
+}
+
+.footer__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 1.5rem;
+  background-color: v.$c-light-text;
+}
+
+.footer__item1::before {
+  display: none;
+}
+
+.footer__copy {
+  display: block;
+  font-size: 0.75rem;
+  color: v.$c-light-text;
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+@use 'sass:map';
+
+//-----------------------------------
+// フォントファミリー
+//------------------------------------
+$f-main: 'Meiryo',
+sans-serif;
+$f-icon: 'bootstrap-icons';
+
+//-----------------------------------
+// パス指定
+//-----------------------------------
+$image-path: '../images/';
+
+//-----------------------------------
+// ブレイクポイント
+//-----------------------------------
+
+$breakpoints: (sp-lg : 'screen and (min-width: 375px) and (max-width: 767.99px)',
+  tablet : 'screen and (min-width: 768px) and (max-width: 1399.99px)',
+  tab-sm : 'screen and (min-width: 768px) and (max-width: 1079.99px)',
+  tab-lg : 'screen and (min-width: 1080px) and (max-width: 1399.99px)',
+  pc : 'screen and (min-width: 1400px)',
+  wide : 'screen and (min-width: 1401px)',
+  no-sp : 'screen and (min-width: 768px)'
+);
+
+//-----------------------------------
+// Color
+//-----------------------------------
+
+$c-black: #000;
+$c-white: #FFF;
+$c-red: #E60012;
+$c-light-text: #707070;
+$c-brown: #3E3232;
+$c-line: #CCC;
+$c-bg: #F5F5F5;
+$c-dark-gray: #070707;
+$c-bg-footer: #F2F2F2;
+
+// -----------------------------------
+// メディアクエリ
+// -----------------------------------
+@mixin mq($bp) {
+  @media #{map.get($breakpoints, $bp)} {
+    @content;
+  }
+}

@@ -1,0 +1,182 @@
+@use '../foundation/variables'as v;
+
+.work__public {
+  padding: 0 0 3.5rem;
+}
+
+.work__slide-box {
+  position: relative;
+}
+
+.work__img {
+  aspect-ratio: 580 / 380;
+  object-fit: cover;
+}
+
+.work__belt {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 1.25rem);
+  display: flex;
+  padding: 0.625rem;
+  align-items: center;
+  background-color: v.$c-dark-gray;
+  opacity: 0.7;
+
+  @include v.mq(no-sp) {
+    width: calc(100% - 1.875rem);
+    padding: 0.9375rem;
+  }
+}
+
+.work__belt-text {
+  font-size: 0.75rem;
+  color: v.$c-white;
+
+  @include v.mq(no-sp) {
+    font-size: 0.875rem;
+  }
+}
+
+.work__contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include v.mq(no-sp) {
+    flex-direction: row;
+  }
+}
+
+.work__contact-box-red {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 3.75rem;
+  background-color: v.$c-red;
+
+  @include v.mq(tablet) {
+    width: 45%;
+    padding: 3.75rem;
+  }
+
+  @include v.mq(pc) {
+    width: 45%;
+    padding: 5rem 7.5rem;
+  }
+}
+
+.work__contact-title {
+  display: block;
+  font-weight: 700;
+  color: v.$c-white;
+
+  @include v.mq(no-sp) {
+    font-size: 1.25rem;
+  }
+}
+
+.work__contact-text {
+  font-size: 0.75rem;
+  color: v.$c-white;
+
+  @include v.mq(no-sp) {
+    font-size: 0.875rem;
+  }
+}
+
+.work__contact-box-white {
+  display: flex;
+  padding: 2.5rem 0;
+  background-color: v.$c-bg;
+
+  @include v.mq(no-sp) {
+    width: 55%;
+    padding: 5rem 0;
+  }
+}
+
+.work__contact-box-tell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.work__tel-small {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  @include v.mq(no-sp) {
+    font-size: 1rem;
+  }
+}
+
+.work__tel {
+  font-size: 1rem;
+  font-weight: 700;
+
+  @include v.mq(tab-sm) {
+    font-size: 1.5rem;
+  }
+
+  @include v.mq(tab-lg) {
+    font-size: 1.6875rem;
+  }
+
+  @include v.mq(pc) {
+    font-size: 1.875rem;
+  }
+}
+
+.work__contact-box-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+}
+
+.work__contact-box-form::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 3.75rem;
+  background-color: v.$c-red;
+
+  @include v.mq(no-sp) {
+    height: 5.5rem;
+  }
+}
+
+.work__form-small {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  @include v.mq(no-sp) {
+    font-size: 1rem;
+  }
+}
+
+.work__form-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid v.$c-black;
+  background-color: v.$c-white;
+  font-size: 1rem;
+  font-weight: 700;
+
+  @include v.mq(no-sp) {
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+}

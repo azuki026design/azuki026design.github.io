@@ -1,0 +1,104 @@
+@use '../foundation/variables'as v;
+
+.c-anime-openning {
+  position: fixed;
+  inset: 0;
+  background-color: v.$c-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.c-anime-openning.is-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c-anime-openning-img {
+  width: 12.5rem;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.c-anime-openning-img.is-show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+body.is-loading {
+  overflow: hidden;
+}
+
+.c-anime-icon-honey1-img {
+  width: 7.3rem;
+  height: 5.8rem;
+  animation: butterfly-fly 9.0s ease-in-out infinite;
+  transform-origin: center center;
+  pointer-events: none;
+
+  @include v.mq(no-sp) {
+    width: 12.5rem;
+    height: 10rem;
+  }
+}
+
+@keyframes butterfly-fly {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(28px) rotate(3deg);
+  }
+
+  50% {
+    transform: translateX(-24px) rotate(-2.5deg);
+  }
+
+  75% {
+    transform: translateX(30px) rotate(3.5deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.c-anime-icon-honey2-img {
+  transform-origin: center center;
+  pointer-events: none;
+  width: 7.3rem;
+  height: 5.8rem;
+  animation: butterfly-fly-reverse 9.5s ease-in-out infinite;
+
+  @include v.mq(no-sp) {
+    width: 12.5rem;
+    height: 10rem;
+  }
+}
+
+@keyframes butterfly-fly-reverse {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(-28px) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateX(24px) rotate(2.5deg);
+  }
+
+  75% {
+    transform: translateX(-30px) rotate(-3.5deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}

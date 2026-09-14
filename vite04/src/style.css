@@ -1,0 +1,64 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==================================================
+   ▼ v4参考（コメントアウト）
+   Tailwind v4では上記の @tailwind をやめて、以下のように書く
+   ================================================== */
+
+/*
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E60012;
+  --color-dark: #3E3232;
+  --color-gray-500: #707070;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #F2F2F2;
+
+  --font-sans: "Meiryo", "Noto Sans JP", sans-serif;
+
+  --max-width-container: 62.5rem;
+  --max-width-narrow: 45rem;
+}
+*/
+
+@layer base {
+  html {
+    @apply w-full overflow-x-hidden bg-white;
+  }
+
+  body {
+    @apply w-full overflow-x-hidden bg-white font-sans leading-[1.75] text-black;
+  }
+
+  a {
+    @apply no-underline text-inherit;
+  }
+
+  img {
+    @apply block w-full;
+  }
+
+  *:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .u-link {
+    @apply transition-opacity duration-200;
+  }
+
+  .u-link:hover,
+  .u-link:focus-visible {
+    @apply opacity-85;
+  }
+
+  .u-list {
+    @apply ml-4 text-sm list-decimal md:text-base;
+  }
+}

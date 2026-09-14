@@ -1,0 +1,29 @@
+@use '../foundation/variables'as v;
+
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+.u-link {
+  transition: opacity .2s ease;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.85;
+  }
+}
+
+.u-list {
+  margin: 0 0 0 1rem;
+  font-size: 0.875rem;
+  list-style: decimal;
+
+  @include v.mq(no-sp) {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,95 @@
+@use '../foundation/variables'as v;
+
+.process {
+  background-color: v.$c-white;
+  padding: 0 0 3.75rem;
+
+  @include v.mq(no-sp) {
+    padding: 0 0 7.5rem;
+  }
+}
+
+.process__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+
+  @include v.mq(tablet) {
+    margin-inline: auto;
+    gap: 0;
+    width: 90vw;
+    max-width: 62.5rem;
+  }
+
+  @include v.mq(pc) {
+    margin-inline: auto;
+    gap: 0;
+    width: 73.21vw;
+    max-width: 62.5rem;
+  }
+}
+
+.process__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  @include v.mq(no-sp) {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.process__item--reverse {
+  @include v.mq(no-sp) {
+    flex-direction: row-reverse;
+  }
+}
+
+.process__img-box {
+  flex-shrink: 0;
+
+  @include v.mq(no-sp) {
+    width: 50%;
+  }
+}
+
+.process__img {
+  aspect-ratio: 355 / 199;
+  width: 95%;
+  margin: 0 5% 0 0;
+
+  @include v.mq(no-sp) {
+    aspect-ratio: 500 / 280;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.process__img--reverse {
+  margin: 0 0 0 5%;
+
+  @include v.mq(no-sp) {
+    margin: 0;
+  }
+}
+
+.process__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0 1rem 0 1.25rem;
+
+  @include v.mq(no-sp) {
+    padding: 1.25rem;
+  }
+}
+
+.process__sub-title {
+  font-size: 1.0625rem;
+}
+
+.process__comment {
+  font-size: 0.8125rem;
+  line-height: 2;
+}

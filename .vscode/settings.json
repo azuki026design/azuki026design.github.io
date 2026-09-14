@@ -1,0 +1,24 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/assets/css"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "/assets/sass/**/*.scss"
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/Sass05/**",
+        "**/Sass04/**",
+        "**/vite04/**",
+        "**/vite03/**",
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveSassCompile.settings.rootIsWorkspace": false,
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": []
+}

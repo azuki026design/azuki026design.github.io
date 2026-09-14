@@ -1,0 +1,44 @@
+@use '../foundation/variables'as v;
+
+.c-table {
+  border: 0;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.c-table-head {
+  width: 100%;
+  height: 0.5rem;
+  background-color: v.$c-brown;
+}
+
+.c-table-head-tail {
+  background-color: v.$c-light-text;
+}
+
+.c-table-tr {
+  vertical-align: top;
+  border-bottom: solid 1px v.$c-light-text;
+}
+
+.c-table-left {
+  background-color: v.$c-bg;
+  font-weight: 400;
+  width: 6.25rem;
+  padding: 0.5rem;
+
+  @include v.mq(no-sp) {
+    width: 8.75rem;
+    padding: 0.9375rem;
+  }
+}
+
+.c-table-right {
+  padding: 0.5rem;
+
+  @include v.mq(no-sp) {
+    padding: 0.9375rem;
+  }
+}

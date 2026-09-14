@@ -1,0 +1,76 @@
+@use '../foundation/variables'as v;
+
+.company__mission-title {
+  display: block;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  line-height: 1.0;
+  font-weight: 700;
+
+  @include v.mq(no-sp) {
+    font-size: 1.125rem;
+    margin: 0 0 1.25rem;
+  }
+}
+
+.company__mission-text {
+  font-size: 0.875rem;
+
+  @include v.mq(no-sp) {
+    font-size: 1rem;
+  }
+}
+
+.company__table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 0;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.company__table-head {
+  width: 100%;
+  height: 0.5rem;
+  background-color: v.$c-brown;
+}
+
+.company__table-head-tail {
+  background-color: v.$c-light-text;
+}
+
+.company__table-tr {
+  border-bottom: solid 1px v.$c-light-text;
+}
+
+.company__table-left {
+  width: 6.25rem;
+  padding: 0.5rem;
+  background-color: v.$c-bg;
+
+  @include v.mq(no-sp) {
+    width: 8.75rem;
+    padding: 0.9375rem;
+  }
+}
+
+.company__table-right {
+  padding: 0.5rem;
+
+  @include v.mq(no-sp) {
+    padding: 0.9375rem;
+  }
+}
+
+.company__address-map {
+  aspect-ratio: 720 / 450;
+  max-width: 100%;
+}
+
+.company__address-text {
+  font-size: 0.875rem;
+
+  @include v.mq(no-sp) {
+    font-size: 1rem;
+  }
+}

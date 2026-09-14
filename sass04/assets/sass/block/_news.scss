@@ -1,0 +1,9 @@
+@use '../foundation/variables'as v;
+
+.news__table-left {
+  width: 8.125rem;
+
+  @include v.mq(no-sp) {
+    width: 13.125rem;
+  }
+}

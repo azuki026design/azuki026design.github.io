@@ -1,0 +1,177 @@
+@use '../foundation/variables'as v;
+
+.product {
+  background-color: v.$c-white;
+  padding: 3rem 0 5rem;
+
+  @include v.mq(no-sp) {
+    padding: 7.5rem 0 5rem;
+  }
+}
+
+.product__icon-honey1-img {
+  width: 6.25rem;
+  height: 5rem;
+  margin: 0 auto;
+
+  @include v.mq(no-sp) {
+    width: 12.5rem;
+    height: 10rem;
+  }
+}
+
+.product__outer {
+  position: relative;
+  padding: 3.75rem 0 6.25rem;
+
+  @include v.mq(no-sp) {
+    padding: 2rem 0 18.2rem;
+  }
+}
+
+.product__outer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8.375rem;
+  height: 6.25rem;
+  background-image: url('#{v.$image-path}icon-leaf1.png');
+  background-position: center;
+  background-size: cover;
+
+  @include v.mq(tablet) {
+    top: -4%;
+    width: 24.25rem;
+    height: 18.2rem;
+  }
+
+  @include v.mq(pc) {
+    width: 24.25rem;
+    height: 18.2rem;
+  }
+}
+
+.product__outer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8.375rem;
+  height: 6.25rem;
+  background-image: url('#{v.$image-path}icon-leaf2.png');
+  background-position: center;
+  background-size: cover;
+
+  @include v.mq(no-sp) {
+    width: 24.25rem;
+    height: 18.2rem;
+  }
+}
+
+.product__caption {
+  margin: 0 auto 2.5rem;
+  font-size: 0.8125rem;
+  text-align: center;
+
+  @include v.mq(no-sp) {
+    margin: 0 auto 2.625rem;
+  }
+}
+
+.product__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 2.5rem;
+
+  @include v.mq(no-sp) {
+    flex-direction: row;
+    width: clamp(26.25rem, 52.71vw, 45rem);
+  }
+}
+
+.product__img-box {
+  flex-shrink: 0;
+}
+
+.product__img {
+  width: 21rem;
+  height: 14rem;
+  margin: 0 auto;
+
+  @include v.mq(sp-lg) {
+    width: 89.33vw;
+    height: 59.47vw;
+  }
+
+  @include v.mq(tablet) {
+    width: 26.35vw;
+    height: 17.57vw;
+  }
+
+  @include v.mq(pc) {
+    width: 22.5rem;
+    height: 15rem;
+  }
+}
+
+.product__text-box {
+  padding: 1.25rem 0 0 0;
+
+  @include v.mq(tablet) {
+    padding: 0 0 0 3.66vw;
+  }
+
+  @include v.mq(pc) {
+    padding: 0 0 0 3.125rem;
+  }
+}
+
+.product__text-box--reverse {
+  @include v.mq(tablet) {
+    padding: 0 3.66vw 0 0;
+  }
+
+  @include v.mq(pc) {
+    padding: 0 3.125rem 0 0;
+  }
+}
+
+.product__name {
+  margin: 0 0 1rem;
+  font-size: 1.0625rem;
+  line-height: 1.0;
+}
+
+.product__comment {
+  margin: 0 0 1rem;
+  font-size: 0.8125rem;
+}
+
+.product__spec {
+  display: block;
+  font-size: 0.8125rem;
+}
+
+.product__container--reverse {
+  @include v.mq(no-sp) {
+    flex-direction: row-reverse;
+  }
+}
+
+.product__caution {
+  position: relative;
+  margin: 0 0 0 0.75rem;
+  font-size: 0.75rem;
+
+  @include v.mq(no-sp) {
+    width: clamp(26.25rem, 52.71vw, 45rem);
+  }
+}
+
+.product__caution::before {
+  content: '※';
+  position: absolute;
+  top: 0;
+  left: -0.75rem;
+}

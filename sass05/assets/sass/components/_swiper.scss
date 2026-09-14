@@ -1,0 +1,24 @@
+@use '../foundation/variables'as v;
+
+.swiper1 {
+  margin: 0 0 3.5rem;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin: 1rem 0 0 0;
+}
+
+.swiper-pagination-bullet {
+  opacity: 0.25;
+  width: 0.625rem;
+  height: 0.625rem;
+  transition: all 0.3s ease;
+  background-color: v.$c-black;
+  border-radius: 50%;
+  margin: 0 0.625rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}

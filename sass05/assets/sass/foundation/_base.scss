@@ -1,0 +1,54 @@
+@use './variables'as v;
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: v.$f-main;
+  line-height: 1.8;
+  color: v.$c-text;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+.sp-only {
+  @include v.mq(no-sp) {
+    display: none;
+  }
+}
+
+.pc-only {
+  display: none;
+
+  @include v.mq(no-sp) {
+    display: block;
+  }
+}
+
+*:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 2px;
+}

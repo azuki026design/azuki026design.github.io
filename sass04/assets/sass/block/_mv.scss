@@ -1,0 +1,14 @@
+@use '../foundation/variables'as v;
+
+.mv {
+  margin: 5rem auto 0;
+  width: 100%;
+  aspect-ratio: 375 / 450;
+
+  @include v.mq(no-sp) {
+    aspect-ratio: 1400 / 600;
+    max-height: 37.5rem;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
