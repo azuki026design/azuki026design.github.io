@@ -46,7 +46,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/vite04/dist/'),
     routes,
     scrollBehavior() {
         return { top: 0 }
