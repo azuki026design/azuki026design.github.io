@@ -2,17 +2,17 @@
 
 .contact {
   background-color: v.$c-light-yellow;
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
 
   @include v.mq(no-sp) {
-    padding: 32px 64px;
+    padding: 2rem 4rem;
   }
 }
 
 .contact__lead {
-  font-size: 12px;
+  font-size: 0.75ren;
   line-height: 1.8;
-  margin: 0 0 36px;
+  margin: 0 0 2rem;
   letter-spacing: 0.02em;
   text-align: center;
 }
@@ -20,7 +20,7 @@
 .contact__form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.25rem;
 }
 
 .contact__field {
@@ -31,7 +31,7 @@
 .contact__label {
   font-size: 1rem;
   font-weight: 600;
-  margin: 0 0 8px;
+  margin: 0 0 0.5rem;
 }
 
 .contact__input,
@@ -39,7 +39,7 @@
   background: v.$c-white;
   border: 2px solid v.$c-light-gray;
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 0.875rem 1rem;
   font-size: 1rem;
   width: 100%;
   box-sizing: border-box;
@@ -58,8 +58,8 @@
 }
 
 .contact__button {
-  margin: 16px 0 0;
-  padding: 16px 32px;
+  margin: 1rem 0 0;
+  padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
   background: v.$c-orange;

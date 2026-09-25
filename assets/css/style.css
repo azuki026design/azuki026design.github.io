@@ -308,130 +308,128 @@ progress {
 
 .c-section-title {
   position: relative;
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
-  margin: 0 0 32px;
+  margin: 0 0 2rem;
   font-family: "Poppins", sans-serif;
   line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .c-section-title {
-    font-size: 48px;
-    margin: 0 0 48px;
+    font-size: 3rem;
+    margin: 0 0 3rem;
   }
 }
 
 .c-section-title::after {
   position: absolute;
-  top: 40px;
+  top: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
   content: "";
   background-color: #333;
-  width: 48px;
+  width: 3rem;
   height: 1px;
 }
 @media screen and (min-width: 768px) {
   .c-section-title::after {
-    top: 64px;
-    width: 64px;
+    top: 4rem;
+    width: 4rem;
   }
 }
 
 .c-section-sub-title {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
-  margin: 0 0 16px;
+  margin: 0 0 1rem;
 }
 @media screen and (min-width: 768px) {
   .c-section-sub-title {
-    font-size: 24px;
-    margin: 0 0 24px;
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem;
   }
 }
 
 .header {
   display: flex;
   justify-content: center;
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem;
 }
 
 .header__logo {
   display: inline-block;
   font-family: "Outfit", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   color: #FFF;
   background: linear-gradient(0deg, #FF9F6B 0%, #FF6B3D 100%);
-  padding: 16px 4px;
+  padding: 1rem 0.25rem;
 }
 @media screen and (min-width: 768px) {
   .header__logo {
-    font-size: 64px;
-    padding: 32px 8px;
+    font-size: 4rem;
+    padding: 2rem 0.5rem;
   }
 }
 
 .header__detail {
-  padding: 8px 0;
+  padding: 0.5rem 0;
 }
 @media screen and (min-width: 768px) {
   .header__detail {
-    padding: 16px 0;
+    padding: 1rem 0;
   }
 }
 
 .top {
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .top {
-    padding: 32px 64px;
+    padding: 2rem 4rem;
   }
 }
 
 .top__lead {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   .top__lead {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
 .work {
   background-image: linear-gradient(0deg, #ede6b2 0%, #f6efb8 30%, #f6f3dc 100%);
-  padding: 32px 10px;
+  padding: 2rem 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .work {
-    padding: 48px 20px;
+    padding: 3rem 1.25rem;
   }
 }
 
 .work__guide {
-  font-size: 13px;
-  margin: 0 16px 8px;
+  font-size: 0.8125rem;
+  margin: 0 1rem 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .work__guide {
-    font-size: 16px;
-    margin: 0 16px 16px;
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
   }
 }
 
 .work__note {
-  font-size: 12px;
-  font-weight: 300;
-  color: #888;
-  margin: 0 16px 16px;
+  font-size: 0.75rem;
+  margin: 0 1rem 1rem;
 }
 
 .work__list {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-columns: minmax(0, 1fr);
-  gap: 16px;
-  margin: 0 0 32px;
+  gap: 1rem;
+  margin: 0 0 2rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1399.99px) {
   .work__list {
@@ -444,67 +442,72 @@ progress {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .work__list--wide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .work__card {
   background-color: #FFF;
 }
 
 .work__link {
-  margin: 0 0 8px;
+  margin: 0 0 0.5rem;
 }
 
 .work__heading {
   display: block;
   font-weight: 700;
-  margin: 8px;
+  margin: 0.5rem;
 }
 
 .work__caption {
-  margin: 8px;
+  margin: 0.5rem;
 }
 
 .work__comment {
-  font-size: 14px;
-  margin: 8px;
+  font-size: 0.875rem;
+  margin: 0.5rem;
   color: #888;
 }
 
 .work__list-caption {
-  font-size: 14px;
-  margin: 0 40px 20px;
+  font-size: 0.875rem;
+  margin: 0 2.5rem 1.25rem;
 }
 
 .work__detail {
   background-image: linear-gradient(0deg, #ede6b2 0%, #f6efb8 30%, #f6f3dc 100%);
-  padding: 32px 10px;
+  padding: 2rem 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .work__detail {
-    padding: 48px 20px;
+    padding: 3rem 1.25rem;
   }
 }
 
 .work__detail-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
-  margin: 0 0 32px;
-  line-height: 1;
+  margin: 0 0 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .work__detail-title {
-    font-size: 32px;
-    margin: 0 0 48px;
+    font-size: 2rem;
+    margin: 0 0 2rem;
   }
 }
 
 .work__detail-guide {
-  font-size: 13px;
-  margin: 0 16px 8px;
+  font-size: 0.8125rem;
+  margin: 0 1rem 0.5rem;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .work__detail-guide {
-    font-size: 16px;
-    margin: 0 16px 16px;
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
   }
 }
 
@@ -512,19 +515,19 @@ progress {
   aspect-ratio: 1;
   width: 100%;
   max-width: 37.5rem;
-  margin: 0 auto 32px;
+  margin: 0 auto 2rem;
 }
 
 .work__detail-sub-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
-  margin: 32px 0 32px;
+  margin: 2rem 0 2rem;
   line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .work__detail-sub-title {
-    font-size: 32px;
-    margin: 48px 0 48px;
+    font-size: 2rem;
+    margin: 3rem 0 3rem;
   }
 }
 
@@ -532,7 +535,7 @@ progress {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 auto 24px;
+  margin: 0 auto 1.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -541,7 +544,7 @@ progress {
     flex-direction: row;
     align-items: stretch;
     max-width: 75rem;
-    margin: 0 auto 32px;
+    margin: 0 auto 2rem;
   }
 }
 
@@ -554,58 +557,82 @@ progress {
 .work__detail-item-title {
   text-align: center;
   font-weight: 700;
-  margin: 0 0 16px;
+  margin: 0 0 1rem;
 }
 
 .work__detail-img1200x628 {
   aspect-ratio: 1200/628;
   width: 100%;
   max-width: 75rem;
-  margin: 0 auto 32px;
+  margin: 0 auto 2rem;
 }
 
 .work__detail-img300x300 {
   aspect-ratio: 1;
   width: 100%;
   max-width: 18.75rem;
-  margin: 0 auto 24px;
+  margin: 0 auto 1.5rem;
 }
 
 .work__detail-text300 {
   width: 100%;
   height: auto;
   max-width: 18.75rem;
-  margin: 0 auto 8px;
+  margin: 0 auto 0.5rem;
 }
 
 .work__detail-img336x280 {
   aspect-ratio: 336/280;
   width: 100%;
   max-width: 21rem;
-  margin: 0 auto 24px;
+  margin: 0 auto 1.5rem;
 }
 
 .work__detail-img1080x1080 {
   aspect-ratio: 1;
   width: 100%;
   max-width: 67.5rem;
-  margin: 0 auto 32px;
+  margin: 0 auto 2rem;
+}
+
+.work__detail-img1200x800 {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto 2rem;
+}
+
+.work__detail-img1920x900 {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto 2rem;
+}
+
+.work__detail-img1080x1500 {
+  width: 100%;
+  max-width: 67.5rem;
+  margin: 0 auto 2rem;
+}
+
+.work__detail-img900x600 {
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 0 auto 2rem;
 }
 
 .work__lp-link {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   text-decoration-line: underline;
 }
 
 .work__lp-bg {
-  padding: 8px;
+  padding: 0.5rem;
   background-color: #FFF;
 }
 
 .cta {
   background-color: #fff8cf;
-  padding: 36px 0;
+  padding: 2rem 0;
 }
 
 .cta__container {
@@ -615,23 +642,23 @@ progress {
 }
 
 .cta__text {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
   line-height: 1.8;
-  margin: 0 0 36px;
+  margin: 0 0 2rem;
   letter-spacing: 0.02em;
 }
 
 .cta__button {
   display: flex;
-  width: 240px;
+  width: 15rem;
   align-items: center;
   justify-content: center;
   border: solid #333 1px;
   background-color: #FFA76C;
   color: #FFF;
-  font-size: 16px;
-  padding: 4px 8px;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 8px;
   margin: 0 auto;
 }
@@ -641,50 +668,50 @@ progress {
 }
 
 .about {
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .about {
-    padding: 32px 64px;
+    padding: 2rem 4rem;
   }
 }
 
 .about__lead {
-  font-size: 14px;
-  margin: 0 0 16px;
+  font-size: 0.875rem;
+  margin: 0 0 1rem;
 }
 @media screen and (min-width: 768px) {
   .about__lead {
-    font-size: 16px;
-    margin: 0 0 24px;
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
   }
 }
 
 .about__comment {
-  font-size: 12px;
-  margin: 0 0 16px;
+  font-size: 0.75rem;
+  margin: 0 0 1rem;
 }
 @media screen and (min-width: 768px) {
   .about__comment {
-    font-size: 16px;
-    margin: 0 0 24px;
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
   }
 }
 
 .contact {
   background-color: #fff8cf;
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .contact {
-    padding: 32px 64px;
+    padding: 2rem 4rem;
   }
 }
 
 .contact__lead {
-  font-size: 12px;
+  font-size: 0.75ren;
   line-height: 1.8;
-  margin: 0 0 36px;
+  margin: 0 0 2rem;
   letter-spacing: 0.02em;
   text-align: center;
 }
@@ -692,7 +719,7 @@ progress {
 .contact__form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.25rem;
 }
 
 .contact__field {
@@ -703,7 +730,7 @@ progress {
 .contact__label {
   font-size: 1rem;
   font-weight: 600;
-  margin: 0 0 8px;
+  margin: 0 0 0.5rem;
 }
 
 .contact__input,
@@ -711,7 +738,7 @@ progress {
   background: #FFF;
   border: 2px solid #F5F5F5;
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 0.875rem 1rem;
   font-size: 1rem;
   width: 100%;
   box-sizing: border-box;
@@ -730,8 +757,8 @@ progress {
 }
 
 .contact__button {
-  margin: 16px 0 0;
-  padding: 16px 32px;
+  margin: 1rem 0 0;
+  padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
   background: #FFA76C;
@@ -748,23 +775,23 @@ progress {
 .footer {
   display: flex;
   justify-content: center;
-  padding: 16px 0px;
+  padding: 1erm 0px;
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 32px 0px;
+    padding: 2rem 0px;
   }
 }
 
 .footer__copy {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-size: 0.625rem;
   color: #888;
 }
 @media screen and (min-width: 768px) {
   .footer__copy {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 

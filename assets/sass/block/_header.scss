@@ -3,27 +3,27 @@
 .header {
   display: flex;
   justify-content: center;
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem;
 }
 
 .header__logo {
   display: inline-block;
   font-family: v.$f-en;
-  font-size: 32px;
+  font-size: 2rem;
   color: v.$c-white;
   background: linear-gradient(0deg, #FF9F6B 0%, #FF6B3D 100%);
-  padding: 16px 4px;
+  padding: 1rem 0.25rem;
 
   @include v.mq(no-sp) {
-    font-size: 64px;
-    padding: 32px 8px;
+    font-size: 4rem;
+    padding: 2rem 0.5rem;
   }
 }
 
 .header__detail {
-  padding: 8px 0;
+  padding: 0.5rem 0;
 
   @include v.mq(no-sp) {
-    padding: 16px 0;
+    padding: 1rem 0;
   }
 }

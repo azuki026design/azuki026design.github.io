@@ -6,9 +6,9 @@
 
 .c-breadcrumb-link {
   color: v.$c-gray;
-  font-size: 12px;
+  font-size: 0.75rem;
 
   @include v.mq(no-sp) {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
