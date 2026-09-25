@@ -41,7 +41,6 @@
 }
 
 .work__list--wide {
-
   @include v.mq(pc) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
