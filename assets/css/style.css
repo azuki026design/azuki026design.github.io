@@ -619,6 +619,12 @@ progress {
   margin: 0 auto 2rem;
 }
 
+.work__detail-img300x200 {
+  width: 100%;
+  max-width: 18.75rem;
+  margin: 0 auto 2rem;
+}
+
 .work__lp-link {
   font-size: 1.5rem;
   font-weight: 700;
