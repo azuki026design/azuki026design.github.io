@@ -8,7 +8,7 @@
             </div>
 
             <div class="mx-auto w-[80vw] max-w-full md:w-[60vw] md:max-w-[45rem] min-[1400px]:w-[51.43vw]">
-                <div class="overflow-hidden">
+                <div class="overflow-hidden h-[67rem] md:h-[56.875rem]">
                     <iframe
                         src="https://docs.google.com/forms/d/e/1FAIpQLSeKBM_E3iXfauwZVP48ASU5iAz5zTQD_lyw7t4qMFRzpQtFpA/viewform?embedded=true"
                         class="mt-[-3.75rem] h-[82.5rem] w-full max-w-full md:h-[75rem]" frameborder="0"

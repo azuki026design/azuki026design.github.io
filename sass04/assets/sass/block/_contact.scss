@@ -13,4 +13,9 @@
 
 .contact__form-box {
   overflow: hidden;
+  max-height: 67rem;
+
+  @include v.mq(no-sp) {
+    max-height: 56.875rem;
+  }
 }
